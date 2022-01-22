@@ -167,6 +167,78 @@ Tip: we can make .pcap file for connection WaF with Real server For T-shout traf
   * brotli compression is use only in HTTPS
 
 
+### Bot mitigation
+```
+  • Crawler
+  • Vulnerability Scanning
+  • Slow Attack
+  • Content Scraping
+  • Illegal User Scan
+```
+Tip : we create "/admin.php" fake link with Bot Deception ! for ban robots.
+
+
+### HTTP Header Security
+```
+  • X-Frame-Options
+    • DENY
+    • SAMEORIGIN
+    • ALLOW-FROM uri
+  • X-Content-Type-Options
+    • nosniff
+  • X-XSS-Protection
+      • Sanitizing Mode
+      • Block Mode
+  • Content-Security-Policy
+      • default-src
+  • Feature-Policy
+    • Feature-Policy: microphone 'none'; geolocation 'none'
+  • Referrer-Policy
+    • Referrer-Policy: no-referrer
+```
+
+
+### Man in the Browser Protection
+```
+  • Obfuscation
+  • Encryption
+  • anti-keylogger
+  • Ajax request white list
+```
+Tip : fortiweb encrypt all input and change name , ... but we have a lot false positive.
+
+
+### Rewriting & Redirecting
+* redirect http to https
+* remove server response header like : x-power-by , ... 
+* erase sensitive data when information discloser occured
+
+### Certificate
+```
+  * SSL Offloading 
+    * https(client,waf) , https(waf,server)
+    * good for reduce proccess in real server and use http to connect waf to server 
+  * SSL Inspection
+    *  https(client,waf) , https(waf,server)
+```
+
+### Web Anti-Defacement
+if developer update site, after 1 min site reverse to old backup. can normaly developer dosnt have access to this section.
+
+### Web Vulnerability Scan
+we can import accountix , IBM, HCL,... export vul report to fortiweb and then generate policy. but we shouldnt use that because false positive.
+
+### Troubleshooting
+```
+  • Ping & traceroute
+  • Log messages
+  • Diff
+  • Packet capture
+  • Diagnostic commands in the CLI
+  • Retrieving debug logs
+```
+
+
 ## best practice for config
 ```
   * Sensitive Data Logging
