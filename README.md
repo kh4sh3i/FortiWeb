@@ -65,6 +65,17 @@ end
 by default fortiweb team design collection for above platform but we can create custom sign for other like Nuke,...
 
 
+### Fortiweb protocol support
+  ```
+  * http
+  * https
+  * ftp
+  * ftps
+  ```
+Tip: is we use fortiweb in edge, then all other trafic and protocol like SMB,.. come to WAF and made procces ! then we shouldnt do this.
+
+
+
 
 ### Fortiweb operation mode
 ```
@@ -147,6 +158,13 @@ Tip: we can make .pcap file for connection WaF with Real server For T-shout traf
     • Persistent Cookie
   ```
 
+
+### Compression, Acceleration,and Caching
+  * we cant use caching, because developer dosnt access to clear cache
+  * we dont have combinig css & js file into one file!
+  * by default real web server use gzip for compression, and we dont use this section. 
+  * we should change server and disable gzip for reduce proccess and do this in WAF side
+  * brotli compression is use only in HTTPS
 
 
 ## best practice for config
