@@ -256,6 +256,13 @@ Tip: this section make Threat Models and learn zero day attack.
   • Retrieving debug logs
 ```
 
+### Secure Connections
+```
+* Certificate Signing Request (CSR) :generate with server or fortiweb
+* Public Key Infrastructure (PKI) : all client must use private key, and fortiweb should use private key for send data to server
+* Intermediate CA: Installing each intermediary CA’s certificate in fortiweb
+* Server Name Indication (SNI): if we have multiple site(host name) in one server we should use SNI to upload all seprate wildcard certificate
+```
 
 ## best practice for config
 ```
