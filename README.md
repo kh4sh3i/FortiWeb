@@ -228,6 +228,24 @@ if developer update site, after 1 min site reverse to old backup. can normaly de
 ### Web Vulnerability Scan
 we can import accountix , IBM, HCL,... export vul report to fortiweb and then generate policy. but we shouldnt use that because false positive.
 
+
+### Machine Learning
+* good features, but in attack log we dosnt see log details and algorithm.
+* Anomaly detection with Hidden Markov Model (HMM)
+* HMM Learning Progress:
+```
+  * collection
+  * building
+  * testing
+  * running
+  * discarded
+```
+
+Tip: this section make Threat Models and learn zero day attack.
+
+
+
+
 ### Troubleshooting
 ```
   • Ping & traceroute
