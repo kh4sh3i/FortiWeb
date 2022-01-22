@@ -1,6 +1,9 @@
 # FortiWeb
 FortiWeb is a web application firewall (WAF) that protects hosted web applications from attacks that target known and unknown exploits.
 
+<img src="fortiweb.jpg" width="600px" />
+
+
 ## FortiWeb Models
 * hardware
 ```
@@ -72,6 +75,34 @@ by default fortiweb team design collection for above platform but we can create 
   WCCP
 ```
 Tip: best mode is reverse proxy and we can ssl offloading and check entire package!
+
+
+### Administrative Domain (ADOM)
+* Administrative domains (ADOMs) enable the admin administrator to constrain other FortiWeb administrators’ access privileges to a subset of policies and protected host names.
+* ADOMs are not enabled by default.
+
+### FortiWeb Sessions
+* fortiweb use "cookiesession1" for controll application
+* we can not change this cookie name until now!!
+
+### Configuration Steps
+* Configure Server Pool  ==> real server ip
+* Configure Virtual Server  ===> up hand that connect to fortigate 
+* Configure Server Policy ==> set a collection of rule for application
+  * Configure X-Forwarded-For
+  * Configure Signatures
+  ```
+    • Cross Site Scripting (XSS)
+    • SQL injection and many other code injection styles
+    • Remote File Inclusion (RFI)
+    • Local File Inclusion (LFI)
+    • OS commands
+    • Trojans/viruses
+    • Known Exploits
+    • sensitive server information disclosure
+    • credit card data leaks
+  ```
+  * Configure Web Protection Profile 
 
 
 
