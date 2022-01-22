@@ -105,6 +105,47 @@ Tip: best mode is reverse proxy and we can ssl offloading and check entire packa
   * Configure Web Protection Profile 
 
 
+### Log Types
+* Event
+  * Displays administrative events, such as downloading a backup copy of the configuration, and hardware failures
+* Traffic
+  * Displays traffic flow information, such as HTTP/HTTPS requests and responses.
+* Attack
+  * Displays attack and intrusion attempt events.
+
+Tip: we can make .pcap file for connection WaF with Real server For T-shout traffic.
+
+
+### Load Balancing Order Check
+  * Health Check
+  ```
+    • ICMP
+    • TCP
+    • TCP Half Open
+    • TCP SSL
+    • HTTP
+    • HTTPS
+  ```
+  * LB Algorithm
+  ```
+    • Round Robin
+    • Weighted Round Robin
+    • Least Connection
+    • URI Hash
+    • Full URI Hash
+    • Host Hash
+    • Host Domain Hash
+    • Source IP Hash
+  ```
+  * Persistence
+  ```
+    • Source IP • Embedded Cookie
+    • HTTP Header • ASP Session ID
+    • URL Parameter • PHP Session ID
+    • Insert Cookie • JSP Session ID
+    • Rewrite Cookie • SSL Session ID
+    • Persistent Cookie
+  ```
 
 
 
