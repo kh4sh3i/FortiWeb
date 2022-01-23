@@ -306,7 +306,7 @@ Tip: this section make Threat Models and learn zero day attack.
 ```
 
 ### reference
-* [FortiWet Administration Guide](http://docs.fortinet.com/document/fortiweb/6.4.2/administration-guide/60895/introduction)
+* [FortiWeb Administration Guide](http://docs.fortinet.com/document/fortiweb/6.4.2/administration-guide/60895/introduction)
 
 
 ### Thanks
